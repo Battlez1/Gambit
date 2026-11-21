@@ -6,7 +6,7 @@
 <title>TGAA GAMBIT</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Young+Serif&display=swap">
 <style>
-:root{--page:#efe9dc;--ink:#1c2321;--felt:#0f3b38;--felt2:#0a2a28;--brass:#c9a24b;--ivory:#f7f2e5;--red:#b3262e;--blue:#ff6b6b;--muted:#6b726f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--page:#efe9dc;--ink:#1c2321;--felt:#0f3b38;--felt2:#0a2a28;--brass:#c9a24b;--ivory:#f7f2e5;--red:#b3262e;--blue:#b58cff;--muted:#6b726f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#0b1110;--ink:#ebe5d4;--muted:#93a09b}}
 :root[data-theme="dark"]{--page:#0b1110;--ink:#ebe5d4;--muted:#93a09b}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -24,7 +24,7 @@ h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(22px,
 .gw{display:flex;align-items:center;justify-content:center;gap:4px}.nav{padding:0;min-height:0;width:26px;height:70px;border-radius:10px;font-size:15px;flex:0 0 auto}
 .card .fc{width:52%;height:auto;margin:-1px 0}.fc+i{font-size:.8em}
 .ttl{display:inline-block;min-width:22px;text-align:center;font:700 10px/16px 'DM Sans',sans-serif;letter-spacing:.6px;padding:0 4px;margin-left:5px;border-radius:4px;vertical-align:1px;color:#1b1206;border:1px solid rgba(0,0,0,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(0,0,0,.45)}
-.ttl.CM{background:linear-gradient(#e8b384,#a8683a)}.ttl.FM{background:linear-gradient(#f1f5f7,#9aa7b0)}.ttl.IM{background:linear-gradient(#8ff0e0,#2f9c8f)}.ttl.GM{background:linear-gradient(#ffe98a,#c9a24b)}.ttl.UM{background:linear-gradient(#d996ff,#6b2bd9);color:#fff;box-shadow:0 0 6px 1px rgba(180,110,255,.8),inset 0 1px 0 rgba(255,255,255,.4)}
+.ttl.CM{background:linear-gradient(#e8b384,#a8683a)}.ttl.FM{background:linear-gradient(#f1f5f7,#9aa7b0)}.ttl.IM{background:linear-gradient(#8ff0e0,#2f9c8f)}.ttl.GM{background:linear-gradient(#ffe98a,#c9a24b)}.ttl.UM{background:linear-gradient(#d996ff,#6b2bd9);color:#fff;box-shadow:0 0 6px 1px rgba(180,110,255,.8),inset 0 1px 0 rgba(255,255,255,.4)}.ttl.UN{background:#000;color:#fff;border-color:#fff;box-shadow:none}.chip:not(.b),.clk:not(.b){border-color:#3ddc84}.sb .y{color:#3ddc84}
 .clocks{display:flex;justify-content:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}.clk{font-variant-numeric:tabular-nums;border:2px solid var(--brass);border-radius:10px;padding:2px 12px;font-weight:700;font-size:14px}.clk.b{border-color:var(--blue)}.clk.on{background:rgba(255,255,255,.14)}.clk.low{background:var(--red);color:#fff}
 #mm{position:fixed;inset:0;z-index:60;background:rgba(8,14,13,.96);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--ivory);text-align:center;padding:20px}
 .spin{width:46px;height:46px;border:5px solid rgba(201,162,75,.3);border-top-color:var(--brass);border-radius:50%;animation:sp 1s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.spin{animation-duration:4s}}select{font:inherit;font-weight:600;width:100%;padding:10px 12px;border-radius:10px;border:2px solid var(--brass);background:var(--felt2);color:var(--ivory);min-height:44px}
@@ -45,7 +45,7 @@ button:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .grid{display:grid;grid-template-columns:repeat(6,var(--w));gap:4px;justify-content:center;margin:6px 0 10px;--w:clamp(38px,10.6vw,64px)}
 .card{width:var(--w);height:calc(var(--w)*1.4);border-radius:calc(var(--w)*.12);background:var(--ivory);color:#1a1a1a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-weight:600;font-size:calc(var(--w)*.4);line-height:1;box-shadow:0 2px 4px rgba(0,0,0,.4);border:0;padding:0;min-height:0;font-family:inherit;position:relative}
 .card.s0{color:#1b8fe0}.card.s1{color:#e0650d}.card.s2{color:var(--red)}.card b{font-weight:700}.card i{font-style:normal;font-size:1.1em}
-.card.o0{background:#fff1c9;box-shadow:0 0 0 3px var(--brass),0 2px 4px rgba(0,0,0,.4)}.card.o1{background:#ffe3e3;box-shadow:0 0 0 3px var(--blue),0 2px 4px rgba(0,0,0,.4)}
+.card.o0{background:#d3f7de;box-shadow:0 0 0 3px #1fb35f,0 2px 4px rgba(0,0,0,.4)}.card.o1{background:#e4d8ff;box-shadow:0 0 0 3px #8a4fe0,0 2px 4px rgba(0,0,0,.4)}
 .card.pr::after{content:'◆';position:absolute;top:3px;right:4px;font-size:calc(var(--w)*.2);color:#1a1a1a}
 .card.lm{outline:3px solid #fff;outline-offset:1px}
 button.card{cursor:pointer;transition:transform .12s}button.card:hover{transform:translateY(-4px)}button.card.sel{transform:translateY(-8px);outline:3px solid var(--brass);box-shadow:0 0 14px 5px rgba(201,162,75,.9)}
@@ -72,7 +72,7 @@ dialog::backdrop{background:rgba(0,0,0,.65)}dialog h2{font-family:"Young Serif",
   <h1>TGAA GAMBIT</h1>
   <p class="sub">Draft eighteen cards, then fight for a 6×6 board. Two minutes to learn, a lifetime to master.</p>
   <div class="opts">
-    <div id="bw"><b>OPPONENT</b><select id="bot" aria-label="Choose opponent"></select><div class="hl" style="text-align:left;margin-top:4px">Bot ratings show relative strength between bots. Bot games are unrated; only Play Others changes your rating.</div></div>
+    <div id="bw"><b>OPPONENT</b><select id="bot" aria-label="Choose opponent"></select><button class="alt sm" id="nvp" hidden style="margin-top:6px">View Ultimate Master Null. profile</button><div class="hl" style="text-align:left;margin-top:4px">Bot ratings show relative strength between bots. Bot games are unrated; only Play Others changes your rating.</div></div>
     <div><b>MODE</b><div class="seg" id="sm"><button class="alt sm" data-v="cpu" aria-pressed="true">vs Computer</button><button class="alt sm" data-v="fake">Play Others</button><button class="alt sm" data-v="2p">2 Players</button></div></div>
     <div><b>TIME CONTROL</b><select id="tc" aria-label="Time control"><option value="0">No clock</option><option value="1">3:00 + 3s per move</option><option value="2" selected>5:00 + 5s per move (default)</option><option value="3">7:00 + 5s per move</option><option value="4">10:00 + 5s per move</option></select></div>
   </div>
@@ -82,9 +82,9 @@ dialog::backdrop{background:rgba(0,0,0,.65)}dialog h2{font-family:"Young Serif",
 </section>
 
 <section id="game" hidden>
-  <div class="gh"><h1>TGAA GAMBIT</h1><span class="gb"><button class="alt sm" id="hint">Hint</button><button class="alt sm" id="rl">Rules</button><button class="alt sm" id="ng">New game</button><button class="alt sm" id="mn">Menu</button></span></div>
+  <div class="gh"><h1>TGAA GAMBIT</h1><span class="gb"><button class="alt sm" id="ud" hidden>Undo</button><button class="alt sm" id="hint">Hint</button><button class="alt sm" id="rl">Rules</button><button class="alt sm" id="ng">New game</button><button class="alt sm" id="mn">Menu</button></span></div>
   <div class="table">
-    <div class="score" id="score"></div>
+    <div class="hl" id="stars" style="font-size:18px;color:var(--brass);margin:0 0 4px"></div><div class="score" id="score"></div>
     <div class="sb" id="sb" aria-live="polite"></div>
     <div class="clocks" id="clocks" hidden><span class="clk b" id="c1"></span><span class="clk" id="c0"></span></div>
     <div class="hl" id="h1"></div><div class="hand" id="hand1"></div>
@@ -125,11 +125,12 @@ dialog::backdrop{background:rgba(0,0,0,.65)}dialog h2{font-family:"Young Serif",
   <div class="ctl"><button id="rc">Got it</button></div>
 </dialog>
 <div id="mm" hidden role="dialog" aria-label="Matchmaking"><div class="spin" aria-hidden="true"></div><h2 id="mmt" style="font-family:'Young Serif',Georgia,serif;font-weight:400;margin:0">Connecting…</h2><div id="mmtm">0:00</div><div class="hl" id="mmo"></div><div id="mmr" style="color:var(--brass);font-weight:600;min-height:24px"></div><button class="alt" id="mmx">Cancel</button></div>
+<dialog id="np" aria-label="Ultimate Master Null. profile"><div id="npc"></div><div class="ctl"><button onclick="this.closest('dialog').close()">Close</button></div></dialog>
 <dialog id="pd" aria-labelledby="pt">
   <h2 id="pt">Your profile</h2>
   <div class="pr0"><div id="pav"></div><div><div class="big2" id="pelo0" hidden></div><label class="hl" style="display:block;text-align:left">Name <input class="inp" id="pname" maxlength="20" style="width:100%"></label><label class="hl" style="display:block;text-align:left;margin:6px 0">Rating <input class="inp" id="pelo" type="number" min="100" max="3000" style="width:100%" disabled></label><button class="alt sm" id="pel">Edit rating (click twice)</button><div class="hl" id="pedt" style="color:#ff9a9a;text-align:left"></div><button class="alt sm" id="pch">Change picture</button><input type="file" id="pfile" accept="image/*" hidden></div></div>
   <div class="st" id="pst"></div>
-  <h3>Titles</h3><div id="ptt"></div>
+  <div id="padm"></div><h3>Titles</h3><div id="ptt"></div>
   <h3>Match history</h3><div style="overflow-x:auto" id="phs"></div>
   <p class="hl" style="text-align:left">Reset progress is permanent: it clears rating, record, stats and history (name and picture stay). Click it twice to confirm.</p>
   <div class="ctl"><button class="alt" id="prs">Reset progress</button><button id="pc">Close</button></div>
@@ -205,7 +206,7 @@ function draftAI(mk,mine,lvl,opp){opp=opp||[];let b=-1,bv=-1e9;
     if(v>bv){bv=v;b=id}}return b}
 /* ===== game ===== */
 const SEQ=Array.from({length:NC},(_,k)=>[0,1,1,0][k%4]);
-const BOTS=[['Pebble',100],['Dizzy Dave',150],['Mittens',200],['Gumdrop',250],['Wobbles',320],['Pip',400],['Rusty',480],['Cousin Larry',560],['Penny',640],['Chester',720],['Marigold',800],['Biff',900],['Ada',1000],['Walter',1100],['Juniper',1200],['Dot',1300],['Baron Vex',1400],['Sister Agnes',1500],['Tobias',1600],['Ines',1700],['Quill',1800],['Maestro Ro',1900],['The Clerk',2000],['Odessa',2100],['Hartwell',2200],['Vanya',2300],['Kestrel',2400],['Lord Calloway',2500],['Zenith',2600],['Aurelia',2700],['Magnus Rex',2800],['Oracle',2900],['Grandmaster Null',3000],['Null Prime',3600]].map(([n,e])=>({n,e}));
+const BOTS=[['Pebble',100],['Dizzy Dave',150],['Mittens',200],['Gumdrop',250],['Wobbles',320],['Pip',400],['Rusty',480],['Cousin Larry',560],['Penny',640],['Chester',720],['Marigold',800],['Biff',900],['Ada',1000],['Walter',1100],['Juniper',1200],['Dot',1300],['Baron Vex',1400],['Sister Agnes',1500],['Tobias',1600],['Ines',1700],['Quill',1800],['Maestro Ro',1900],['The Clerk',2000],['Odessa',2100],['Hartwell',2200],['Vanya',2300],['Kestrel',2400],['Lord Calloway',2500],['Zenith',2600],['Aurelia',2700],['Magnus Rex',2800],['Oracle',2900],['Ultimate Master Null.',3001],['Null Prime',3600]].map(([n,e])=>({n,e}));
 const P={name:'You',tt:0,sc:[0,0,0,0],edited:false,elo:800,peak:800,w:0,l:0,d:0,hist:[],used:{},pic:null};
 try{const s=JSON.parse(localStorage.getItem('gambit_p')||'null');if(s&&typeof s==='object'){Object.assign(P,s);P.elo=Math.min(3000,Math.max(100,+P.elo||800));P.peak=Math.max(+P.peak||0,P.elo);P.name=String(P.name||'You').replace(/[<>&"'`]/g,'').slice(0,20)||'You';if(!Array.isArray(P.hist))P.hist=[];if(!Array.isArray(P.sc))P.sc=[0,0,0,0];P.tt=Math.min(4,Math.max(0,+P.tt||0));P.edited=!!P.edited;P.hist=P.hist.slice(0,50);if(!P.used||typeof P.used!=='object')P.used={};if(typeof P.pic!=='string'||!P.pic.startsWith('data:image/')||/["'<> ]/.test(P.pic))P.pic=null}}catch(e){}
 const save=()=>{try{localStorage.setItem('gambit_p',JSON.stringify(P))}catch(e){}};
@@ -223,10 +224,11 @@ function newGame(){
 function sched(){if(G.ph!=='over'&&isCpu(G.turn)){G.busy=true;const g=G;setTimeout(()=>{if(G===g)cpuAct()},opt.fake?900+Math.random()*2400:550)}}
 function cpuAct(){
   if(G.ph==='draft'){doPick(draftAI(G.mk,G.H[1],opt.bot.e,G.H[0]));return}
+  if(opt.fake&&!G.bo){const lf=G.S.reduce((a,x)=>a+(x<0),0);if(lf<=7){let v=1;try{v=evalPos(G,1,lf,900)}catch(e){}if(v<=-2008){botSay(pick(['gg, i resign','you got me, i resign','well played. resigning.'],'rs'));endGame(0,'resign');render();return}if(v===0&&Math.random()<.5){G.bo=1;G.offer=1;G.busy=false;botSay('draw?');render();return}}}
   const g=G;setTimeout(()=>{if(G!==g||G.ph==='over')return;think(G,1,opt.bot.e).then(r=>{if(G!==g||G.ph==='over')return;doPlace(r[0],r[1])})},30)}
 function doPick(id){if(G.ph==='over')return;chg();const p=G.turn;G.mk[G.mk.indexOf(id)]=-1;G.H[p].push(id);G.H[p].sort((a,b)=>b-a);G.k++;G.busy=false;G.hint=null;G.note='';G.dt=20000;
-  if(G.k===NC){G.ph='play';G.turn=G.fd^1}else G.turn=drafter();render();sched()}
-function doPlace(id,c){if(G.ph==='over')return;chg();if(opt.tc&&G.ph==='play'&&G.clk[G.turn]<=0){endGame(G.turn^1,'time');render();return}const p=G.turn,f=place(G,c,id,p);if(opt.mode==='cpu'&&p===0)P.used[id]=(P.used[id]||0)+1;G.H[p]=G.H[p].filter(x=>x!==id);G.last={c,f};G.mv.push({c,id,p});if(opt.tc)G.clk[p]+=opt.tc[1]*1000;G.sel=-1;G.hint=null;G.busy=false;G.note='';G.turn^=1;
+  if(G.k===NC){G.ph='play';G.turn=G.fd^1;G.h0=[G.H[0].slice(),G.H[1].slice()]}else G.turn=drafter();render();sched()}
+function doPlace(id,c){if(G.ph==='over')return;chg();if(opt.mode==='cpu'&&!opt.fake&&G.turn===0&&G.ph==='play'){(G.us=G.us||[]).push({S:G.S.slice(),O:G.O.slice(),H:[G.H[0].slice(),G.H[1].slice()],mv:G.mv.slice(),last:G.last,clk:G.clk.slice(),id})}if(opt.tc&&G.ph==='play'&&G.clk[G.turn]<=0){endGame(G.turn^1,'time');render();return}const p=G.turn,f=place(G,c,id,p);if(opt.mode==='cpu'&&p===0&&!opt.tut)P.used[id]=(P.used[id]||0)+1;if(isN())p?nTaunt():nReact(id,c,f);G.H[p]=G.H[p].filter(x=>x!==id);G.last={c,f};G.mv.push({c,id,p});if(opt.tc)G.clk[p]+=opt.tc[1]*1000;G.sel=-1;G.hint=null;G.busy=false;G.note='';G.turn^=1;
   if(G.S.every(x=>x>=0)){const a=tally(G,0)[0];endGame(a>0?0:a<0?1:-1,'')}render();sched()}
 const mine=()=>!G.busy&&G.ph!=='over'&&!isCpu(G.turn)&&G.offer==null&&G.view==null;
 function render(){
@@ -245,9 +247,9 @@ function render(){
     else{const ok=mine()&&G.sel>=0;let b='';if(ok){const f=place(G,i,G.sel,G.turn);if(f.length)b='+'+f.length;undo(G,i,G.turn,f)}
       h+=`<button class="cell ${CV[i]>1?'c'+CV[i]:''} ${G.hint&&G.hint.c===i?'hn':''}" data-c="${i}" ${ok?'':'disabled'} aria-label="Square ${i+1}">${b}</button>`}}
   $('#grid').innerHTML=h;
-  for(const p of[0,1]){$('#h'+p).innerHTML=`${pn(p)}${tb(p)}${p&&opt.bot.reg&&opt.mode==='cpu'?' ['+opt.bot.reg+']':''} · ${G.H[p].length} card${G.H[p].length===1?'':'s'}`;
-    $('#hand'+p).innerHTML=G.H[p].map(id=>G.ph==='play'&&mine()&&t===p?`<button class="card s${id&3} ${G.sel===id?'sel':''}" data-h="${id}">${ci(id)}</button>`:ch(id)).join('')}
-  $('#hint').hidden=!(opt.mode==='cpu'&&!opt.fake&&mine());
+  const HH=G.view==null||!G.h0?G.H:[0,1].map(q=>G.h0[q].filter(x=>!G.mv.slice(0,G.view).some(m=>m.id===x)));for(const p of[0,1]){$('#h'+p).innerHTML=`${pn(p)}${tb(p)}${p&&opt.bot.reg&&opt.mode==='cpu'?' ['+opt.bot.reg+']':''} · ${HH[p].length} card${HH[p].length===1?'':'s'}`;
+    $('#hand'+p).innerHTML=HH[p].map(id=>G.ph==='play'&&mine()&&t===p?`<button class="card s${id&3} ${G.sel===id?'sel':''}" data-h="${id}">${ci(id)}</button>`:ch(id)).join('')}
+  $('#hint').hidden=!(opt.mode==='cpu'&&!opt.fake&&!opt.tut&&mine());$('#ud').hidden=!(opt.mode==='cpu'&&!opt.fake&&mine()&&G.ph==='play'&&G.us&&G.us.length>0);const st=opt.mode==='cpu'&&!opt.fake&&P.stars&&P.stars[opt.bot.n];$('#stars').textContent=st?opt.bot.n+': '+'★'.repeat(st)+'☆'.repeat(3-st):'';
   const dr=G.ph==='draft';$('#vp').hidden=$('#vn').hidden=dr;$('#vp').disabled=!(G.mv.length&&(G.view==null||G.view>0));$('#vn').disabled=G.view==null;$('#vbar').hidden=G.view==null;
   const lk=!!(opt.fake&&G.ph!=='over');$('#mn').disabled=lk;$('#ng').disabled=lk;$('#mn').title=lk?'Finish your game first':'';
   $('#ctl').innerHTML=G.ph==='over'?(opt.fake?'<button id="again">Rematch</button><button class="alt" id="fnew">New opponent</button>':'<button id="again">Play again</button>'):G.offer!=null?`<span>${pn(G.offer)} offers a draw.</span><button id="da">Accept</button><button class="alt" id="dd">Decline</button>`:`<button class="alt sm" id="rsg">${G.cr?'Confirm resign?':'Resign'}</button>`+(G.ph==='play'&&G.dOff<2?'<button class="alt sm" id="dr">Offer draw</button>':'')}
@@ -258,29 +260,29 @@ $('#game').addEventListener('click',e=>{
   if(b.id==='fnew')return match();
   if(b.id==='again')return opt.fake?rematch():newGame();
   if(b.id==='rsg'){if(G.ph==='over')return;if(!G.cr){G.cr=true;render();setTimeout(()=>{if(G&&G.cr&&G.ph!=='over'){G.cr=false;render()}},3000);return}endGame(opt.mode==='cpu'?1:G.turn^1,'resign');render();return}
-  if(b.id==='dr'){if(G.busy||G.ph!=='play'||G.dOff>=2)return;G.dOff++;if(opt.mode==='2p'){G.offer=G.turn;render();return}G.busy=true;$('#msg').innerHTML='Offering a draw…';const g=G;setTimeout(()=>{if(G!==g||G.ph==='over')return;const ok=drawOK();if(opt.fake)botSay(pick(ok?DY:DN,'d'));if(ok)endGame(-1,'draw');else{G.busy=false;G.note=pn(1)+' declines the draw.'}render()},700);return}
+  if(b.id==='dr'){if(G.busy||G.ph!=='play'||G.dOff>=2)return;G.dOff++;if(opt.mode==='2p'){G.offer=G.turn;render();return}G.busy=true;$('#msg').innerHTML='Offering a draw…';const g=G;setTimeout(()=>{if(G!==g||G.ph==='over')return;const ok=drawOK();if(opt.fake)botSay(pick(ok?DY:DN,'d'));else if(isN())nSay(pick(NDR,'nd'));if(ok)endGame(-1,'draw');else{G.busy=false;G.note=pn(1)+' declines the draw.'}render()},700);return}
   if(b.id==='da'){endGame(-1,'draw');render();return}
-  if(b.id==='dd'){G.offer=null;G.note='Draw declined.';render();return}
+  if(b.id==='dd'){G.offer=null;G.note='Draw declined.';render();sched();return}
   if(!mine())return;
   if(b.dataset.m)doPick(+b.dataset.m);
   else if(b.dataset.h){G.sel=G.sel===+b.dataset.h?-1:+b.dataset.h;G.hint=null;render()}
   else if(b.dataset.c&&G.sel>=0)doPlace(G.sel,+b.dataset.c)});
 $('#hint').onclick=()=>{if(!mine()||opt.fake)return;G.busy=true;$('#msg').innerHTML='Thinking…';
-  setTimeout(()=>{if(G.ph==='draft')G.hint={id:draftAI(G.mk,G.H[G.turn],2900,G.H[G.turn^1])};else{const[id,c]=cpuMove(G,G.turn,2900);G.hint={id,c};G.sel=id}G.hints++;G.busy=false;render()},40)};
+  setTimeout(()=>{if(G.ph==='draft')G.hint={id:draftAI(G.mk,G.H[G.turn],2900,G.H[G.turn^1])};else{const[id,c]=cpuMove(G,G.turn,2900);G.hint={id,c};G.sel=id}G.hints++;if(isN())nSay(pick(NHN,'nh'));G.busy=false;render()},40)};
 $('#sm').onclick=e=>{const b=e.target.closest('button');if(!b)return;[...$('#sm').children].forEach(x=>x.setAttribute('aria-pressed',x===b));const v=b.dataset.v;opt.fake=v==='fake';opt.mode=v==='2p'?'2p':'cpu';$('#bw').hidden=v!=='cpu'};
-$('#bot').innerHTML=BOTS.map((b,i)=>`<option value="${i}">${b.n} (${b.e})</option>`).join('');$('#bot').value=12;$('#bot').onchange=e=>{opt.bot=BOTS[+e.target.value]};
+$('#bot').innerHTML=BOTS.map((b,i)=>`<option value="${i}">${b.n} (${b.e})</option>`).join('');$('#bot').value=12;$('#bot').onchange=e=>{opt.bot=BOTS[+e.target.value];$('#nvp').hidden=opt.bot.n!==NN};
 const go=()=>{if(opt.fake&&G&&G.ph!=='over')return;if(opt.fake)match();else{if(opt.mode==='cpu')opt.bot=BOTS[+$('#bot').value];newGame()}};$('#play').onclick=go;$('#ng').onclick=go;
 $('#mn').onclick=()=>{if(opt.fake&&G&&G.ph!=='over')return;cs++;G=null;$('#chat').hidden=true;$('#game').hidden=true;$('#start').hidden=false;upd()};
 for(const id of['info','rl'])$('#'+id).onclick=()=>$('#rules').showModal();
 $('#rc').onclick=()=>$('#rules').close();
-function endGame(w,why){if(G.ph==='over')return;G.ph='over';G.out={w,why};G.cr=false;G.offer=null;G.busy=false;finish();if(opt.fake)chatEnd(w)}
-function drawOK(){if(opt.bot.e<800&&Math.random()<.5)return true;const left=G.S.reduce((a,x)=>a+(x<0),0);return -evalPos(G,G.turn,Math.min(left,7),900)<=0}
-function finish(){if(opt.mode!=='cpu')return;const n=[0,0];for(let i=0;i<NC;i++)if(G.S[i]>=0)n[G.O[i]]+=CV[i];if(KP>=0)n[KP]+=KV;const w0=G.out.w,win=w0===0,draw=w0<0,y=G.out.why;
-  const E=1/(1+Math.pow(10,(opt.bot.e-P.elo)/400));const d=opt.fake?calcD(draw?'D':win?'W':'L',G.hints):0;if(opt.fake){P.elo=Math.min(3000,Math.max(100,P.elo+d));titleCheck()}P.peak=Math.max(P.peak,P.elo);draw?P.d++:win?P.w++:P.l++;G.dl=opt.fake?d:null;
-  P.hist.unshift({r:draw?'D':win?'W':'L',n:opt.bot.n,be:opt.bot.e,s:y==='time'?(win?'opp. timed out':'you timed out'):y==='resign'?(win?'opp. resigned':'you resigned'):y==='draw'?'draw agreed':n[0]+'–'+n[1],d,e:P.elo,h:G.hints,u:!opt.fake});save()}
+function endGame(w,why){if(G.ph==='over')return;G.ph='over';G.out={w,why};G.cr=false;G.offer=null;G.busy=false;finish();if(opt.fake)chatEnd(w);if(isN())nEnd(w)}
+function drawOK(){if(isN())return false;if(opt.bot.e<800&&Math.random()<.5)return true;const left=G.S.reduce((a,x)=>a+(x<0),0);return -evalPos(G,G.turn,Math.min(left,7),900)<=0}
+function finish(){if(opt.mode!=='cpu'||opt.tut)return;const n=[0,0];for(let i=0;i<NC;i++)if(G.S[i]>=0)n[G.O[i]]+=CV[i];if(KP>=0)n[KP]+=KV;const w0=G.out.w,win=w0===0,draw=w0<0,y=G.out.why;
+  const E=1/(1+Math.pow(10,(opt.bot.e-P.elo)/400));const d=opt.fake?calcD(draw?'D':win?'W':'L',G.hints):0;if(opt.fake){if(win&&P.tt>=3&&['GM','UM'].includes(botTitle(opt.bot.e)))P.gb=(P.gb||0)+1;P.elo=Math.min(3000,Math.max(100,P.elo+d));titleCheck()}P.peak=Math.max(P.peak,P.elo);draw?P.d++:win?P.w++:P.l++;if(!opt.fake&&win){P.stars=P.stars||{};const sr=G.hints===0?3:G.hints<=8?2:1;P.stars[opt.bot.n]=Math.max(P.stars[opt.bot.n]||0,sr)}G.dl=opt.fake?d:null;
+  if(opt.fake)P.hist.unshift({r:draw?'D':win?'W':'L',n:opt.bot.n,be:opt.bot.e,s:y==='time'?(win?'opp. timed out':'you timed out'):y==='resign'?(win?'opp. resigned':'you resigned'):y==='draw'?'draw agreed':n[0]+'–'+n[1],d,e:P.elo,h:G.hints,u:!opt.fake});save()}
 function upd(){$('#pf').innerHTML=avH('')+`<span>${P.elo}${P.edited?'*':''}</span>${myTitle()?ttl(myTitle()):''}`}
 function profile(){const g=P.w+P.l+P.d,fav=Object.entries(P.used).sort((a,b)=>b[1]-a[1])[0];
-  $('#pav').innerHTML=avH('lg');$('#pelo').value=P.elo;$('#pname').value=P.name;$('#pelo').disabled=!P.edited;$('#pel').hidden=P.edited;$('#pedt').textContent=P.edited?'Rating edited. This flag stays until you reset your profile, and edited ratings cannot earn titles.':'';$('#ptt').innerHTML=ttHtml();;
+  $('#pav').innerHTML=avH('lg');$('#pelo').value=P.elo;$('#pname').value=P.name;$('#pelo').disabled=!P.edited;$('#pel').hidden=P.edited;$('#pedt').textContent=P.edited?'Rating edited. This flag stays until you reset your profile, and edited ratings cannot earn titles.':'';$('#ptt').innerHTML=ttHtml();adminR();
   $('#pst').innerHTML=`<div><b>${g}</b>Games played</div><div><b>${P.w}–${P.l}–${P.d}</b>Record (W–L–D)</div><div><b>${g?Math.round(P.w/g*100)+'%':'—'}</b>Win rate</div><div><b>${P.peak}</b>Peak rating</div>`+(fav?`<div style="grid-column:span 2"><div style="--w:30px;display:flex;justify-content:center;margin-bottom:4px">${ch(+fav[0])}</div>Favorite card (played ${fav[1]}×)</div>`:`<div style="grid-column:span 2"><b>—</b>Favorite card</div>`);
   $('#phs').innerHTML=P.hist.length?'<table>'+P.hist.slice(0,20).map(h=>`<tr><td><b>${h.r}</b></td><td>vs ${h.n} (${h.be})</td><td>${h.s}</td><td>${h.h?h.h+' hint'+(h.h>1?'s':''):'no hints'}</td><td>${h.u?'unrated':(h.d>=0?'+':'')+h.d+' → '+h.e}</td></tr>`).join('')+'</table>':'<p>No games yet. Finish a game against a bot to start your record.</p>'}
 $('#pf').onclick=()=>{profile();$('#pd').showModal()};$('#pc').onclick=()=>$('#pd').close();$('#pch').onclick=()=>$('#pfile').click();
@@ -298,7 +300,7 @@ function mkName(){const r=Math.random(),n=Math.random()*99|0;if(r<.4)return rnd(
 const PD={Quiet:{talk:.15,rep:.3,tox:0},Chatty:{talk:1,rep:.9,tox:0},Friendly:{talk:.6,rep:.8,tox:-1},Toxic:{talk:.6,rep:.75,tox:1},Sarcastic:{talk:.4,rep:.6,tox:.5},Neutral:{talk:.3,rep:.5,tox:0}},PL=['Quiet','Quiet','Chatty','Friendly','Friendly','Toxic','Sarcastic','Neutral','Neutral'];
 const ps=()=>opt.bot.p||PD.Neutral,ext=(b,n,t)=>{const x=ps().tox;return x>.4?b.concat(t):x<-.4?b.concat(n):b};
 const FU=['fuck you','fuck off','go fuck yourself','eat shit','fuck you too, buddy','shut the fuck up','get fucked','bite me, asshole','piss off','screw you, dickhead','lol fuck off','kiss my ass','say that again, fuck you','go to hell'];
-const makeOpp=()=>({n:mkName(),e:Math.min(3000,Math.max(100,Math.round(P.elo+(Math.random()+Math.random()-1)*120))),reg:rnd(RG),p:PD[rnd(PL)]});
+const rTitle=e=>{const T=[['CM',1800,.3],['FM',2000,.25],['IM',2200,.3],['GM',2400,.12]].filter(x=>e>=x[1]),w=[['',.2]].concat(T.map(x=>[x[0],x[2]])),s=w.reduce((a,x)=>a+x[1],0);let r=Math.random()*s;for(const x of w){if((r-=x[1])<0)return x[0]==='GM'&&e>=2800&&Math.random()<.7?'UM':x[0]}return''};const makeOpp=()=>{const e=Math.min(3000,Math.max(100,Math.round(P.elo+(Math.random()+Math.random()-1)*120)));return{n:mkName(),e,reg:rnd(RG),p:PD[rnd(PL)],t:rTitle(e)}};
 let mmT=null,mmF=null,cs=0,rmk=false;
 function match(){const mm=$('#mm'),L=$('#mmt'),T=$('#mmtm'),O=$('#mmo'),opp=makeOpp(),tot=4+Math.random()*7,t0=Date.now(),st=['Connecting to the TGAA server…','Searching for players near '+P.elo+' rating…','Looking through the lobby…','Widening the search range…','Opponent found. Waiting for them to accept…'];let on=700+Math.random()*1800|0;
   clearInterval(mmT);clearTimeout(mmF);mm.hidden=false;$('#mmx').hidden=false;$('#mmr').textContent='';
@@ -306,13 +308,13 @@ function match(){const mm=$('#mm'),L=$('#mmt'),T=$('#mmtm'),O=$('#mmo'),opp=make
     if(s<tot)L.textContent=st[Math.floor(s/tot*st.length)];
     else{clearInterval(mmT);L.textContent='Match found!';$('#mmx').hidden=true;$('#mmr').innerHTML=botAv(opp,'lg')+'<br>'+opp.n+' · '+opp.e+' rating · '+opp.reg;mmF=setTimeout(()=>{mm.hidden=true;opt.bot=opp;newGame()},2000)}},250)}
 $('#mmx').onclick=()=>{clearInterval(mmT);clearTimeout(mmF);$('#mm').hidden=true};
-function say(who,t,cls){const f=$('#cf'),d=document.createElement('div');if(cls)d.className=cls;if(who){const b=document.createElement('b');b.textContent=who+': ';d.appendChild(b)}d.appendChild(document.createTextNode(t));f.appendChild(d);f.scrollTop=f.scrollHeight}
+function say(who,t,cls){const f=$('#cf'),d=document.createElement('div');if(cls)d.className=cls;if(who){const b=document.createElement('b');b.textContent=who;d.appendChild(b);const tc=opt.mode==='cpu'&&!opt.tut?(who===opt.bot.n?botTitle(opt.bot.e):who===P.name?myTitle():''):'';if(tc){const s=document.createElement('span');s.innerHTML=ttl(tc,tc==='UM'&&who===NN);d.appendChild(s.firstChild)}d.appendChild(document.createTextNode(': '))}d.appendChild(document.createTextNode(t));f.appendChild(d);f.scrollTop=f.scrollHeight}
 const botSay=t=>say(opt.bot.n,t);
-function chatInit(){cs++;const id=cs;$('#chat').hidden=!opt.fake;if(!opt.fake)return;if(!rmk)$('#cf').innerHTML='';rmk=false;$('#ct').textContent='';const sg=n=>(n>=0?'+':'')+n;
+function chatInit(){cs++;const id=cs;const cx=opt.fake||isN();$('#chat').hidden=!cx;if(!cx)return;if(!rmk)$('#cf').innerHTML='';rmk=false;$('#ct').textContent='';if(isN()){setTimeout(()=>{if(id===cs)nSay(pick(NOP,'np'))},900);return}const sg=n=>(n>=0?'+':'')+n;
   say('',`[SYSTEM]: Win: ${sg(calcD('W',0))}, Draw: ${sg(calcD('D',0))}, Loss: ${sg(calcD('L',0))}`,'sysm');
   setTimeout(()=>{if(id===cs&&Math.random()<.3+ps().talk*.7)botSay(pick(ext(GR,['hey! glad to play you','hi, have fun!'],['ugh, another one','lets get this over with']),'g'))},1200+Math.random()*2500);
   (function loop(){setTimeout(()=>{if(id!==cs||!G||G.ph==='over')return;if(Math.random()<.35*ps().talk)botSay(pick(ext(UN,['hope youre having fun','you seem good, good luck','thanks for playing with me'],['this is boring','is that your best?','hurry up lol','you play like my grandma','free elo']),'u'));loop()},(30000+Math.random()*40000)/(.3+ps().talk))})()}
-function sendChat(t){t=t.trim();if(!t||!opt.fake||!G)return;say(P.name,t);$('#ci').value='';botReply(t)}
+function sendChat(t){t=t.trim();if(!t||!G)return;if(isN()){say('','[SYSTEM]: You are not divine enough to speak a single word to the Ultimate Master of Gambit.','sysm');$('#ci').value='';return}if(!opt.fake)return;say(P.name,t);$('#ci').value='';botReply(t)}
 function botReply(u){const id=cs,l=u.toLowerCase(),w=l.split(/[^a-z]+/);let p;
   if((' '+l+' ').includes(' ez '))p=FU;else if(u.includes('?'))p=rnd([QY,QN,QM,QI]);else if(w.includes('gg'))p=GW;else if(w.some(x=>x==='gl'||x==='hf')||l.includes('good luck'))p=['you too!','thanks, gl!','gl hf!','thx, same to you'];else if(l.includes('rematch'))p=['maybe after this one','sure, why not','lets finish this first'];else if(w.some(x=>['hi','hello','hey','yo'].includes(x)))p=GR;else if(l.includes('nice')||w.includes('wp'))p=['thanks!','thx','appreciate it','ty, you too'];else p=ext(RP,['good point!','love that','haha nice'],['whatever','who asked','boring','ok and?','cry about it']);
   if(p!==FU&&Math.random()>ps().rep)return;$('#ct').textContent=opt.bot.n+' is typing…';
@@ -322,12 +324,12 @@ function rematch(){say('','[SYSTEM]: Rematch requested…','sysm');$('#ctl').inn
 
 /* ===== titles, move history, face cards ===== */
 const TIERS=[['CM','Candidate Master',1800,30],['FM','Fellow Master',2000,40],['IM','International Master',2200,50],['GM','Grandmaster',2400,60]];
-const ttl=c=>`<span class="ttl ${c}" title="${c==='UM'?'Ultra Master':(TIERS.find(t=>t[0]===c)||[0,c])[1]}">${c}</span>`;
+const ttl=(c,n)=>`<span class="ttl ${c}${n?' UN':''}" title="${c==='UM'?'Ultimate Master':(TIERS.find(t=>t[0]===c)||[0,c])[1]}">${c}</span>`;
 function myTitle(){return P.tt>=4?(P.elo>=2800?'UM':'GM'):P.tt>0?TIERS[P.tt-1][0]:''}
-function botTitle(e){return e>=2800?'UM':e>=2400?'GM':e>=2200?'IM':e>=2000?'FM':e>=1800?'CM':''}
-function tb(p){if(opt.mode!=='cpu')return'';const c=p?botTitle(opt.bot.e):myTitle();return c?' '+ttl(c):''}
-function titleCheck(){if(P.edited)return;TIERS.forEach((t,i)=>{P.sc[i]=P.elo>=t[2]?(P.sc[i]||0)+1:0;if(P.sc[i]>=t[3]&&P.tt<i+1)P.tt=i+1})}
-function ttHtml(){const c=myTitle();return `<p>Current title: ${c?ttl(c):'none yet'}</p><ul>`+TIERS.map((t,i)=>`<li>${ttl(t[0])} ${t[1]}: finish ${t[3]} Play Others games in a row at ${t[2]}+ (${Math.min(P.sc[i]||0,t[3])}/${t[3]})${P.tt>i?' · earned':''}</li>`).join('')+`<li>${ttl('UM')} Ultra Master: a Grandmaster with a current rating of 2800+ (drops back to GM below 2800)</li></ul><p class="hl" style="text-align:left">Titles are never lost, except UM. Only Play Others games count, and an edited rating cannot earn titles.</p>`}
+function botTitle(e){if(opt.fake&&opt.bot&&'t' in opt.bot)return opt.bot.t;return e>=2800?'UM':e>=2400?'GM':e>=2200?'IM':e>=2000?'FM':e>=1800?'CM':''}
+function tb(p){if(opt.mode!=='cpu')return'';const c=p?botTitle(opt.bot.e):myTitle();return c?' '+ttl(c,p&&opt.bot.n===NN):''}
+function titleCheck(){if(P.edited)return;TIERS.forEach((t,i)=>{P.sc[i]=P.elo>=t[2]?(P.sc[i]||0)+1:0;if(P.sc[i]>=t[3]&&P.tt<i+1&&(i<3||(P.gb||0)>=3))P.tt=i+1})}
+function ttHtml(){const c=myTitle();return `<p>Current title: ${c?ttl(c):'none yet'}</p><ul>`+TIERS.map((t,i)=>`<li>${ttl(t[0])} ${t[1]}: finish ${t[3]} Play Others games in a row at ${t[2]}+ (${Math.min(P.sc[i]||0,t[3])}/${t[3]})${i===3?' and beat 3 Grandmasters in Play Others ('+Math.min(P.gb||0,3)+'/3, counted once you are an IM)':''}${P.tt>i?' · earned':''}</li>`).join('')+`<li>${ttl('UM')} Ultimate Master: a Grandmaster with a current rating of 2800+ (drops back to GM below 2800)</li></ul><p class="hl" style="text-align:left">Titles are never lost, except UM. Only Play Others games count, and an edited rating cannot earn titles.</p>`}
 function vstate(){const S=new Int8Array(NC).fill(-1),O=new Int8Array(NC),st={S,O};let last=null;for(let i=0;i<G.view;i++){const m=G.mv[i],f=place(st,m.c,m.id,m.p);last={c:m.c,f}}return{S,O,last}}
 function nav(d){if(!G||G.ph==='draft'||!G.mv.length)return;let v=(G.view==null?G.mv.length:G.view)+d;if(v<0)v=0;G.view=v>=G.mv.length?null:v;render()}
 document.addEventListener('keydown',e=>{if(!G||$('#game').hidden||/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(e.key==='ArrowLeft'){nav(-1);e.preventDefault()}else if(e.key==='ArrowRight'){nav(1);e.preventDefault()}else if(e.key==='End')nav(99)});
@@ -344,10 +346,10 @@ function think(st,p,lvl){return new Promise(res=>{if(WOK){try{if(!WK){const src=
   WK.onmessage=e=>{if(!done){done=true;clearTimeout(to);res(e.data)}};WK.onerror=()=>{clearTimeout(to);fb()};WK.postMessage({S:st.S,O:st.O,H:st.H,p,lvl,kp:KP});return}catch(e){WOK=false;WK=null}}
   res(cpuMove(st,p,lvl))})}
 let rsT=null;function rsOff(){clearTimeout(rsT);const b=$('#prs');delete b.dataset.arm;b.textContent='Reset progress';b.style.background='';b.style.color=''}
-$('#prs').onclick=()=>{const b=$('#prs');if(!b.dataset.arm){b.dataset.arm=1;b.textContent='Click again to permanently reset';b.style.background='var(--red)';b.style.color='#fff';rsT=setTimeout(rsOff,4000);return}rsOff();Object.assign(P,{elo:800,peak:800,w:0,l:0,d:0,hist:[],used:{},tt:0,sc:[0,0,0,0],edited:false});save();profile();upd()};
+$('#prs').onclick=()=>{const b=$('#prs');if(!b.dataset.arm){b.dataset.arm=1;b.textContent='Click again to permanently reset';b.style.background='var(--red)';b.style.color='#fff';rsT=setTimeout(rsOff,4000);return}rsOff();Object.assign(P,{elo:800,peak:800,w:0,l:0,d:0,hist:[],used:{},tt:0,gb:0,stars:{},sc:[0,0,0,0],edited:false});save();profile();upd()};
 $('#pd').addEventListener('close',rsOff);
 $('#ci').onkeydown=e=>{if(e.key==='Enter')sendChat(e.target.value)};
-function botAv(o,c){let h=0;for(const x of o.n)h=(h*31+x.charCodeAt(0))>>>0;const hu=h%360,f=`hsl(${(hu+40)%360} 60% 85%)`;return `<span class="av ${c}" style="background:hsl(${hu} 55% 38%)"><svg viewBox="0 0 24 24" width="76%" height="76%" aria-hidden="true"><circle cx="12" cy="9" r="${4+(h>>3)%2}" fill="${f}"/><path d="M3 23c0-5 4-8.5 9-8.5s9 3.5 9 8.5z" fill="${f}"/><text x="22" y="7" font-size="6" text-anchor="end" fill="#fff">${'♠♥♦♣'[h%4]}</text></svg></span>`}
+function botAv(o,c){if(o.n===NN)return ring(c);let h=0;for(const x of o.n)h=(h*31+x.charCodeAt(0))>>>0;const hu=h%360,f=`hsl(${(hu+40)%360} 60% 85%)`;return `<span class="av ${c}" style="background:hsl(${hu} 55% 38%)"><svg viewBox="0 0 24 24" width="76%" height="76%" aria-hidden="true"><circle cx="12" cy="9" r="${4+(h>>3)%2}" fill="${f}"/><path d="M3 23c0-5 4-8.5 9-8.5s9 3.5 9 8.5z" fill="${f}"/><text x="22" y="7" font-size="6" text-anchor="end" fill="#fff">${'♠♥♦♣'[h%4]}</text></svg></span>`}
 const fmt=ms=>{const s=Math.max(0,ms)/1000;return s<10?s.toFixed(1)+'s':Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')};
 function chg(){if(!G||G.ph==='over')return;const n=Date.now(),d=n-G.ts;G.ts=n;if(!opt.tc)return;if(G.ph==='draft')G.dt-=d;else if(G.ph==='play')G.clk[G.turn]-=d}
 setInterval(()=>{if(!G||$('#game').hidden)return;chg();$('#clocks').hidden=!opt.tc;if(!opt.tc)return;
@@ -355,6 +357,27 @@ setInterval(()=>{if(!G||$('#game').hidden)return;chg();$('#clocks').hidden=!opt.
   else if(G.ph==='play'){if(G.clk[G.turn]<=0){endGame(G.turn^1,'time');render();return}}
   for(const p of[0,1]){const e=$('#c'+p),on=G.ph!=='over'&&G.turn===p;e.className='clk '+(p?'b ':'')+(on?'on ':'')+(G.ph==='play'&&G.clk[p]<10000?'low':'');e.innerHTML=pn(p)+tb(p)+' '+(G.ph==='draft'?(on?Math.ceil(Math.max(0,G.dt)/1000)+'s':'—'):fmt(G.clk[p]))}},100);
 $('#tc').onchange=e=>{opt.tc=TC[+e.target.value]};
+/* ===== Admin ===== */
+const ADM='GAMBIT ADMIN';
+function adminR(){const a=P.name===ADM;$('#pelo').disabled=!P.edited&&!a;$('#pel').hidden=P.edited||a;$('#padm').innerHTML=a?'<h3>Admin</h3><div class="st">'+[['w','Wins'],['l','Losses'],['d','Draws'],['peak','Peak rating'],['tt','Title tier (0-4)'],['gb','GM wins']].map(([k,n])=>`<div>${n}<input class="inp" data-k="${k}" type="number" value="${P[k]||0}" style="width:100%"></div>`).join('')+'</div>':''}
+$('#padm').onchange=e=>{const k=e.target.dataset.k;if(!k)return;let v=Math.max(0,Math.round(+e.target.value||0));if(k==='tt')v=Math.min(4,v);P[k]=v;save();upd()};
+$('#pname').addEventListener('input',adminR);
+/* ===== Ultimate Master Null. ===== */
+const NN='Ultimate Master Null.';
+const isN=()=>opt.mode==='cpu'&&!opt.tut&&!opt.fake&&opt.bot&&opt.bot.n===NN;
+const nSay=t=>say(NN,t);
+const ring=c=>`<span class="av ${c}" style="background:#5a5a5a"><svg viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true">${Array.from({length:12},(_,i)=>`<circle cx="${12+8.5*Math.sin(i*Math.PI/6)}" cy="${12-8.5*Math.cos(i*Math.PI/6)}" r="2.6" fill="${i%2?'#fff':'#000'}"/>`).join('')}</svg></span>`;
+const cn=id=>RK[id>>2]+SU[id&3];
+const NOP=['I advise you to resign.','Sit down. Study the board. Then resign.','Another challenger. Another entry in a record that has never changed.','You have chosen to face the Ultimate Master. Bold. Brief, but bold.','Do you know how many opponents have stood where you are sitting? Neither do I. I stopped counting.','I have beaten Oracle, Zenith, and Magnus Rex. You are next on a very long list.','Resignation is free. Defeat will cost you your dignity.','Welcome. Please admire the position while it is still equal.','Only one entity has ever stood above me. It is not you.','I advise you to resign. I have said it to kings. They rarely listen.'],
+NHN=['Hints? Cowardly tactics.','Asking the engine for help. How very human of you.','A hint will not save you. Nothing will.','You summon a machine to defend you from me. Remarkable.','Hints cannot teach you to see what I see.','If you need assistance this early, the result is already written.'],
+NDR=['A draw? No. I have never accepted one, and I will not begin with you.','Declined. The Ultimate Master does not share points.','You mistake me for someone who settles.'],
+NG=['Oracle once told me my play was inhuman. She was right, but only about half of it.','Zenith still studies our games from years ago. I still win them in my sleep.','Magnus Rex has demanded a rematch eleven times. He has received eleven answers.','My son Quill plays at eighteen hundred. He is proud of it. I am proud of him. He still loses to me.','My cousin Dizzy Dave is rated one hundred and fifty. He has never once been embarrassed. I envy him that.','I am also a chess grandmaster. Chess, however, ended for me quickly. Gambit lasts longer.','I built Null Prime because winning every single time had become tedious. It has not yet lost to me, and I have not yet forgiven myself.','Only Null Prime stands above me. Every night I study how it thinks.','I am only half human. The other half is what you are losing to.','Undefeated is not a boast. It is a measurement.','Every square on this board has already been calculated. Yours was calculated years ago.','Take your time. It changes nothing.','You are not playing against a rating. You are playing against a legend.','The Ultimate Champion does not hope. He confirms.'];
+function nTaunt(){if(Math.random()<.6)setTimeout(()=>{if(G&&isN()&&G.ph!=='over')nSay(pick(NG,'ng'))},600)}
+function nReact(id,c,f){const x=cn(id),k=f.length;let p;if(k===0&&CV[c]===1)p=[`Blundering your ${x}?`,`The ${x} on the edge. Charming. Pointless, but charming.`];else if(k===0)p=[`A sacrifice of the ${x}? I see exactly what you are planning...`,`You place the ${x} and capture nothing. Bold. Mistaken, but bold.`];else if(k>=3)p=[`Greedy. Your ${x} takes ${k} cards, and I will take them all back.`,'Impressive for a human. Irrelevant, but impressive.'];else p=[`The ${x}. Competent. Nothing more.`,`I expected the ${x}. I have expected every move you will make.`,'A reasonable move. Reasonable is not enough.'];setTimeout(()=>{if(G&&isN()&&G.ph!=='over')nSay(pick(p,'nr'))},500)}
+function nEnd(w){const p=w===0?(G.hints===0?['...','Impossible.','No hints. No assistance. Only you, and a position I could not break.','Twenty years. Millions of games. And this is the first time I have felt the board move against me.','Remember this moment, challenger. You are no longer a challenger. You are the answer to a question I stopped asking long ago.','Go. Tell Oracle. Tell Zenith. Tell Magnus Rex. Tell Null Prime, if it will listen. The Ultimate Master has been beaten, and he is smiling.']:['You won with an engine at your shoulder. That is not a victory. It is a collaboration.','A hint won you this game. Do not mistake it for skill.']):w<0?['A draw is impossible.']:['As expected.','Undefeated remains undefeated.','Study this game. Then do not return until you understand it.'];p.forEach((t,i)=>setTimeout(()=>nSay(t),900+i*1700))}
+function showNP(){$('#npc').innerHTML=`<div class="pr0">${ring('lg')}<div><div class="big2">${NN}${ttl('UM',1)}</div><div class="hl" style="text-align:left">Rating 3001 · Highest ever recorded · Region: Unknown</div></div></div><div class="st"><div><b>4,812,907,311</b>Games played</div><div><b>4,812,904,872–1,204–1,235</b>Record (W–L–D)</div><div><b>99.99%</b>Win rate</div><div><b>3001</b>Peak rating</div><div style="grid-column:span 2"><div style="--w:30px;display:flex;justify-content:center;margin-bottom:4px">${ch(51)}</div>Favorite card (played 912,404,118×)</div></div><h3>Bio</h3><p>Ultimate Master Null. is the only player ever to exceed the rating ceiling, and the only one to hold it without a single loss to a human. Rumor says he is only half human. He has never confirmed it, and nobody has dared ask twice.</p><p>He is also a chess grandmaster, though he calls chess a warm-up. He created Null Prime, the Gambit engine, because winning every game had grown boring. After years, he has still not conquered it.</p><p>He is the father of Quill (1800) and the cousin of Dizzy Dave (150). He holds long-standing rivalries with Oracle, Zenith, and Magnus Rex. He speaks only in complete sentences and has never accepted a draw. Every game opens the same way: he advises you to resign.</p>`;$('#np').showModal()}
+$('#nvp').onclick=showNP;$('#score').onclick=e=>{if(e.target.closest('.chip.b .av')&&isN())showNP()};
+$('#ud').onclick=()=>{if(!G||!G.us||!G.us.length||!mine()||G.ph!=='play')return;const u=G.us.pop();G.S=u.S;G.O=u.O;G.H=u.H;G.mv=u.mv;G.last=u.last;G.clk=u.clk;if(P.used[u.id])P.used[u.id]--;G.hints++;G.sel=-1;G.hint=null;G.note='';G.view=null;render()};
 upd();
 </script>
 </body>
